@@ -1,93 +1,92 @@
-🖼️ Image Deblurring GUI using PyQt5 & OpenCV
-This project is a Python-based GUI application that enables users to load an image and apply deblurring and sharpening techniques using unsharp masking. The application supports dynamic control over sharpening parameters (sigma and strength) and includes preset configurations for user convenience.
+# 🖼️ Image Deblurring GUI
 
---
+Image Deblurring GUI is a simple, production-ready desktop application for enhancing and deblurring images using unsharp masking and denoising techniques. It provides an intuitive GUI to load, tune, and sharpen blurred images interactively.
 
-**🧠 Features**
- - Load and display images in GUI
- - Apply unsharp masking for deblurring
- - Denoising using OpenCV's fastNlMeansDenoisingColored
- - Adjustable sharpening intensity via sliders
- - Preset options for quick parameter tuning
- - Real-time image update in GUI
- - Built with PyQt5 and OpenCV
+---
 
---
+## 🧩 Core Capabilities:
+- **Image Loading:** Import and preview common image formats (.png, .jpg, .bmp).
+- **Unsharp Masking:** Enhance image sharpness with tunable parameters.
+- **Noise Reduction:** Apply pre-processing denoising to remove color artifacts.
+- **Dynamic Parameter Control:** Adjust sigma and strength via sliders in real-time.
+- **Preset Options:** Choose from predefined enhancement levels for quick results.
 
-**🖥️ GUI Controls**
- - Load Image: Opens a file picker to select the image
- - Sigma Slider: Controls the standard deviation of Gaussian blur
- - Strength Slider: Controls how strongly sharpening is applied
- - Presets:
-   -> Default: Sigma 3, Strength 3
-   -> Sharp Boost: Sigma 2, Strength 6
-   -> Mild Sharpen: Sigma 4, Strength 2
- - Deblur: Applies denoising and unsharp masking
+---
 
--- 
+##✨ Key Features
+### 🖼️ Image Enhancement Tools
+ - **📤 Load Image:** Easily upload and preview images for enhancement.
+ - **🔧 Sigma & Strength Sliders:** Control Gaussian blur intensity and sharpening strength.
+ - **📦 Preset Configurations:**
+     -> Default (Sigma 3, Strength 3)
+     -> Sharp Boost (Sigma 2, Strength 6)
+     -> Mild Sharpen (Sigma 4, Strength 2)
+ - **🧽 Denoising:** Removes color and texture noise before deblurring.
+ - **🔍 Live Preview:** See real-time changes after applying filters.
 
-**📂 Folder Structure**
-pgsql
-Copy
-Edit
-├── motion_deblur_GUI.py       # Main Python script for GUI
-├── README.md                  # Project documentation
-└── requirements.txt           # (You can generate this using pip freeze)
+---
 
-**🛠️ Installation**
-Clone the repository:
+## 🧰 Tech Stack
+**🔧 Core Technologies**
+ - Python + PyQt5: GUI design and event handling.
+ - OpenCV: Image processing, enhancement, and color conversion.
+ - NumPy: Matrix operations and pixel manipulation.
+## 📦 Dependencies
+ - PyQt5
+ - opencv-python
+ - numpy
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/image-deblurring-gui.git
-cd image-deblurring-gui
-Install dependencies:
+---
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Or manually install:
+## 🚀 Setup Instructions
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/image-deblurring-gui.git
+    cd image-deblurring-gui
+    ```
 
-bash
-Copy
-Edit
-pip install PyQt5 opencv-python numpy
-Run the app:
+2. Create and activate a virtual environment (optional):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # Windows: venv\Scripts\activate
+    ```
 
-bash
-Copy
-Edit
-python motion_deblur_GUI.py
-🧪 Techniques Used (Based on Practical Exam)
-Grayscale conversion
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    
+4. Run the application:
+    ```bash
+    python motion_deblur_GUI.py
+    ```
 
-Histogram plotting
-
-Image enhancement:
-
-Log transformation
-
-Gamma correction
-
-Histogram equalization
-
-📷 Sample Image Enhancements from Lab Work
-The project can be extended with:
-
-Histogram plotting
-
-Log & gamma corrected versions of images
-
-Auto-enhancement toggle using histogram equalization
+---
 
 
-📌 Future Improvements
--Batch processing of images
+## 📂 Project Structure
 
-Export deblurred images
+```
+image-deblurring-gui/
+|
+|├── motion_deblur_GUI.py      
+|├── requirements.txt           
+|└── README.md                  
+```
 
-Integration of enhancement techniques from practical (log, gamma)
+---
 
-Add histogram view of current image
+## 🤝 Contribution Guidelines
+
+Contributions are welcome!
+If you'd like to propose a new feature or enhancement, open an issue or submit a pull request.
+
+---
+
+## 📜 License
+
+Licensed under the MIT License.
+
+---
+
+Image Deblurring GUI – Simplifying Image Enhancement for Everyone ✨
